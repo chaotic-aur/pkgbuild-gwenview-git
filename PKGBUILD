@@ -15,9 +15,15 @@ source=("git+https://invent.kde.org/graphics/gwenview.git")
 install=$pkgname.install
 sha256sums=('SKIP')
 
+#pkgver() {
+#  cd gwenview
+#  printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+#}
+
 pkgver() {
-  cd gwenview
-  printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+  cd ${srcdir}/${pkgname%-git}
+  _ver="$(cat CMakeLists.txt | grep RELEASE_SERVICE_VERSION | cut -d '"' -f2 | tr '\n' '.' | cut -d "." -f 1-3)"
+  echo "$(echo ${_ver}).r$(git rev-list --count HEAD)"
 }
 
 prepare() {
