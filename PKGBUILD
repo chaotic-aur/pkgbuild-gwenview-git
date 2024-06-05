@@ -3,12 +3,12 @@
 # Contributor: Antonio Rojas <arojas@archlinux.org>
 
 pkgname=gwenview-git
-pkgver=24.04.70_r7415.g194ac16b
-pkgrel=2
+pkgver=24.07.70_r7485.gcb9a41d1
+pkgrel=1
 pkgdesc='A fast and easy to use image viewer'
 url='https://apps.kde.org/gwenview/'
 license=(GPL-2.0-or-later LGPL-2.0-or-later)
-depends=(baloo-git cfitsio exiv2 gcc-libs glibc kcolorscheme-git kcompletion-git kconfig-git kconfigwidgets-git kcoreaddons-git kfilemetadata-git kguiaddons-git ki18n-git kiconthemes-git kio-git kitemmodels-git kitemviews-git kjobwidgets-git kparts-git kservice-git kwidgetsaddons-git kxmlgui-git lcms2 libjpeg-turbo libkdcraw-git libpng libtiff libx11 phonon-qt6-git plasma-activities-git purpose-git qt6-base qt6-svg qt6-wayland solid-git wayland)
+depends=(baloo-git cfitsio exiv2 gcc-libs glibc kcolorscheme-git kcompletion-git kconfig-git kconfigwidgets-git kcoreaddons-git kfilemetadata-git kguiaddons-git ki18n-git kiconthemes-git kimageannotator kio-git kitemmodels-git kitemviews-git kjobwidgets-git kparts-git kservice-git kwidgetsaddons-git kxmlgui-git lcms2 libjpeg-turbo libkdcraw-git libpng libtiff libx11 phonon-qt6-git plasma-activities-git purpose-git qt6-base qt6-svg qt6-wayland solid-git wayland)
 makedepends=(git extra-cmake-modules-git kdoctools-git wayland-protocols)
 optdepends=('kamera-git: import pictures from gphoto2 cameras'
             'kimageformats-git: support for dds, xcf, exr, psd, and more image formats'
